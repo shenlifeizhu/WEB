@@ -4,21 +4,26 @@
 	<meta charset="utf-8">
 	<title></title>
 	<style type="text/css">
+	div{
+		width: 400px;
+		margin: 30px auto;
+	}
 		canvas{
-			margin: 30px auto;
 			background-color: #f0f0f0;
 		}
 	</style>
 </head>
 <body>
-<canvas width="400" height="400"></canvas>
+	<div>
+		<canvas width="400" height="400"></canvas>	
+	</div>
 </body>
 <script type="text/javascript">
 	var canvas=document.getElementsByTagName('canvas')[0];
 		ctx=canvas.getContext('2d');
 	var rgba='rgba(0,0,0,0.5)';
 	var button=document.getElementsByTagName('button')[0];
-	timer=setInterval(rgbb,500);
+	timer=setInterval(rgbb,300);
 	function rgbb(){
 		for (var i = 0; i < 8; i+=2) {
 			for (var x = 1; x <8; x+=2) {
