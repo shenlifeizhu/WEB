@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		canvas{
+			background-color: #000;
+		}
+	</style>
+</head>
+<body>
+<canvas width="900" height="900"></canvas>
+</body>
+<script type="text/javascript">
+
+	var canvas=document.getElementsByTagName('canvas')[0];
+		ctx=canvas.getContext('2d');
+		const PI=Math.PI*2;//声明常量;
+
+	
+		time=0;
+		function fun(){
+			ctx.clearRect(0,0,900,900);
+			ctx.beginPath();
+			col=ctx.createRadialGradient(450,450,5,450,450,50);
+			col.addColorStop(0.2,'orange');
+			col.addColorStop(0.5,'red');
+			ctx.fillStyle=col;
+			ctx.arc(450,450,50,0,2*Math.PI);
+			ctx.fill();
+			ctx.closePath();
+			ctx.beginPath();
+			ctx.font='bolder 50px 华文行楷';
+			ctx.fillStyle='purple';
+			ctx.fillText('集齐龙珠',350,350);
+			ctx.fillText('召唤神龙',350,550);
+			ctx.fill();
+			ra=50;
+			for (var i = 0; i < 8; i++) {
+				ra+=50;
+				ctx.beginPath();
+				ctx.strokeStyle='#fff';
+				ctx.arc(450,450,ra,0,2*Math.PI);
+				ctx.stroke();
+			}
+			time+=1;
+			function sun(x,y,start,end){
+				ctx.save();
+				ctx.beginPath();
+				ctx.translate(450,450);
+				gad=ctx.createRadialGradient(x,0,5,x,0,25);
+				gad.addColorStop(0.2,start);
+				gad.addColorStop(0.8,end);
+				ctx.fillStyle=gad;
+				ctx.rotate(2*Math.PI/y*time);
+				ctx.arc(x,0,25,0,2*Math.PI);
+				ctx.fill();
+				ctx.restore();
+				ctx.closePath();
+			}
+			sun(100,50,'red','orange');
+			sun(150,80,'orange','yellow');
+			sun(200,365,'yellow','green');
+			sun(250,100,'green','blue');
+			sun(300,200,'blue','purple');
+			sun(350,400,'purple','pink');
+			sun(400,300,'purple','red');
+
+		}
+		setInterval(fun,50);	
+</script>
+</html>
