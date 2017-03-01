@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	*{
+		padding: 0px;
+		margin: 0px;
+
+	}
+	ul,ol{
+		list-style: none;
+	}
+		.all{
+			width: 1000px;
+			height: 800px;
+			margin: 30px auto;
+			background-color: #000;
+
+		}
+		.all ol,.all header{
+			position: absolute;
+			width: 300px;
+			height: 300px;
+			top: 0px;
+			left: 0px;
+			margin: 0px auto;
+			transform-style: preserve-3d;
+		}
+		.all header{
+			top: 170px;
+			position: relative;
+			animation: myRotate 10s linear infinite;
+		}
+		@keyframes myRotate{
+			from{
+				transform: rotate3d(1,1,1,-360deg);
+			}
+			to{
+				transform: rotate3d(1,1,1,360deg);
+			}
+		}
+		li{
+			width: 300px;
+			height:300px;
+			position: absolute;
+			border-radius: 50%;
+		}
+		.purple1,.purple2,.purple3,.purple4{
+			border: 3px solid purple;
+			animation: Purple 10s linear infinite;
+		}
+		@keyframes Purple{
+			from{
+				border: 3px solid purple;
+			}
+			to{
+				border: 3px solid red;
+			}
+		}
+		.orange1,.orange2,.orange3,.orange4{
+			border: 3px solid #25e2c8;
+			animation: Orange 10s linear infinite;
+		}
+		@keyframes Orange{
+			from{
+				border: 3px solid #25e2c8;
+			}
+			to{
+				border: 3px solid orange;
+			}
+		}
+		.blue1,.blue2,.blue3,.blue4{
+			border: 3px solid #1bff00;
+			animation: Blue 10s linear infinite;
+
+		}
+		@keyframes Blue{
+			from{
+				border: 3px solid #1bff00;
+			}
+			to{
+				border: 3px solid pink;
+			}
+		}
+		.purple2,.orange2,.blue2{
+			width: 200px;
+			height: 200px;
+			top: 50px;
+			left: 50px;
+			transform: translateZ(-50px);
+		}
+		.purple3,.orange3,.blue3{
+			width: 200px;
+			height: 200px;
+			top: 50px;
+			left: 50px;
+			transform: translateZ(50px);
+		}
+		.purple4,.orange4,.blue4{
+			height: 0px;
+			border-radius: 0%;
+			top: 150px;
+			left: 0px;
+		}
+		.blue4{
+			transform: rotateY(90deg);
+		}
+		.ol2{
+			transform: rotateY(90deg);
+		}
+		.ol3{
+			transform: rotateX(90deg);
+		}
+	</style>
+</head>
+<body>
+<div class="all">
+	<header>
+		<ol class="ol1">
+			<li class="purple1"></li>
+			<li class="purple2"></li>
+			<li class="purple3"></li>
+			<li class="purple4"></li>
+		<ol class="ol2">
+			<li class="orange1"></li>
+			<li class="orange2"></li>
+			<li class="orange3"></li>
+			<li class="orange4"></li>		
+		</ol>
+		<ol class="ol3">
+			<li class="blue1"></li>
+			<li class="blue2"></li>
+			<li class="blue3"></li>
+			<li class="blue4"></li>
+		</ol>
+	</header>
+</div>
+</body>
+</html>
