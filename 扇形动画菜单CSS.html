@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+	ol,ul{
+		list-style: none;
+	}
+		.all{
+			width: 800px;
+			height: 800px;
+			background-color: #f0f0f0;
+			margin: 50px auto;
+			position: relative;
+			overflow: hidden;
+			font-size: 25px;
+			color: #fff;
+		}
+		.nav{
+			width: 150px;
+			height: 200px;
+			padding-right: 50px;
+			border-bottom-right-radius: 100%;
+			text-align: right;
+			position: absolute;
+			line-height: 150px;
+			top: 0px;
+			left: 0px;
+			z-index: 10;
+			background-color:#562596;
+		}
+		.one{
+			width: 430px;
+			height: 430px;
+			border-bottom-right-radius: 100%;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			overflow: hidden;
+			z-index: 3;
+			transform-origin: 0px 0px;
+			font-size: 20px;
+			transform: rotate(90deg);
+			transition: all 3s; 
+		}
+		.Nav:hover .one{
+			transform: rotate(0deg);
+		}
+		.one .allOne:hover div{
+			background-color: red;
+		}
+		ol{
+			position: absolute;
+			transition: all 2s;
+			transform: rotate(90deg);
+		}
+		.one .allOne:hover ol{
+			transform: rotate(0deg);
+		}
+		.one>ul>li>div{
+			width: 300px;
+			height: 300px;
+			padding-right: 30px;
+			position: absolute;
+			border-bottom-right-radius: 315px;
+			line-height: 75px;
+			text-align: right;
+			z-index: 3;
+			transform-origin: 0px 0px;
+		}
+		.one1{
+			background-color:#950adc;
+		}		
+		.one2{
+			background-color: #724477;
+			transform: rotate(15deg);
+		}		
+		.one3{
+			background-color: green;
+			transform: rotate(30deg);
+		}		
+		.one4{
+			background-color: pink;
+			transform: rotate(45deg);
+		}		
+		.one5{
+			background-color:#ba6bbf;
+			transform: rotate(60deg);
+		}		
+		.one6{
+			background-color: #ff00f7;
+			transform: rotate(75deg);
+		}
+
+		ol  li{
+			width: 400px;
+			padding-right: 50px;
+			text-align: right;
+			line-height: 70px;
+			height: 200px;
+			transform-origin: 0px 0px;
+			position: absolute;
+		}
+
+		.two11{
+			height: 250px;
+			background-color: purple;
+			transform: rotate(0deg);
+		}		
+		.two12{
+			height: 250px;
+			background-color: blue;
+			transform: rotate(30deg);
+		}		
+		.two13{
+			height: 250px;
+			background-color: green;
+			transform: rotate(60deg);
+		}
+		.two,.three{
+			width: 400px;
+			height: 400px;
+			position: absolute;
+			top: -400px;
+			left: -400px;
+			overflow: hidden;
+			font-size: 20px;
+			border-radius: 50%;
+			padding-top: 400px;
+			padding-left: 400px;
+			transform: rotate(91deg);
+			transition: all 3s;
+		}
+		.allTwo:hover{
+			background-color: red;
+		}
+		.two21{
+			background-color: #34ead1;
+		}
+		.two22{
+			background-color:#557773;
+			transform: rotate(15deg);
+		}		
+		.two23{
+			background-color:#3f756e;
+			transform: rotate(30deg);
+		}		
+		.two24{
+			background-color:#1a3330;
+			transform: rotate(45deg);
+		}		
+		.two25{
+			background-color: #177568;
+			transform: rotate(60deg);
+		}		
+		.two26{
+			background-color: #092c2d;
+			transform: rotate(75deg);
+		}
+	</style>
+</head>
+<body>
+<div class="all">
+	<div class="header">
+	<div class="Nav">
+		<div class="nav">导航菜单</div>
+		<div class="one">
+			<ul>
+				<li class="allOne"><div class="one1">首页</div></li>
+				<li class="allOne">
+					<div class="one2">服务</div>
+					<ol>
+						<li class="two11 allTwo">打印</li>
+						<li class="two12 allTwo">编辑</li>
+						<li class="two13 allTwo">保管</li>
+					</ol>
+				</li>
+				<li class="allOne"><div class="one3">联系</div>
+				<ol>
+					<li class="two21 allTwo">支持</li>
+					<li class="two22 allTwo">销售</li>
+					<li class="two23 allTwo">购买</li>
+					<li class="two24 allTwo">摄影师</li>
+					<li class="two25 allTwo">零销售</li>
+					<li class="two26 allTwo">常规</li>
+				</ol>
+				</li>
+				<li class="allOne"><div class="one4">商店</div>
+				<ol>
+					<li class="two11 allTwo">南区</li>
+					<li class="two12 allTwo">北区</li>
+					<li class="two13 allTwo">中心区</li>
+				</ol>
+				</li>
+				<li class="allOne"><div class="one5">我们</div>
+				<ol>
+					<li class="two11 allTwo">邮箱</li>
+					<li class="two12 allTwo">邮递</li>
+					<li class="two13 allTwo">电话</li>	
+				</ol>
+				</li>
+				<li class="allOne"><div class="one6">售后</div>
+				<ol>
+				<li class="two21 allTwo">轩辕剑</li>
+				<li class="two22 allTwo">太阿剑</li>
+				<li class="two23 allTwo">闪光枪</li>
+				<li class="two24 allTwo">偃月刀</li>
+				<li class="two25 allTwo">电击枪</li>
+				<li class="two26 allTwo">莫邪剑</li>
+				</ol>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+		<!-- <div class="two">
+			<ul class="two1">
+				<li class="two11">打印</li>
+				<li class="two12">编辑</li>
+				<li class="two13">保管</li>
+			</ul>
+
+			<ul class="two3">
+				<li class="two11">南区</li>
+				<li class="two12">北区</li>
+				<li class="two13">中心区</li>
+			</ul>
+
+			<ul class="two5">
+				<li class="two21">轩辕剑</li>
+				<li class="two22">太阿剑</li>
+				<li class="two23">闪光枪</li>
+				<li class="two24">偃月刀</li>
+				<li class="two25">电击枪</li>
+				<li class="two26">莫邪剑</li>
+			</ul>
+		</div>
+		<div class="three">
+			<ul class="two2">
+				<li class="two21">支持</li>
+				<li class="two22">销售</li>
+				<li class="two23">购买</li>
+				<li class="two24">摄影师</li>
+				<li class="two25">零销售</li>
+				<li class="two26">常规</li>
+			</ul>
+			<ul class="two4">
+				<li class="two11">邮箱</li>
+				<li class="two12">邮递</li>
+				<li class="two13">电话</li>
+			</ul>
+		</div> -->
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+	// var nav=document.getElementsByClassName('nav')[0];
+	// var one=document.getElementsByClassName('one')[0];
+	// var header=document.getElementsByClassName('header')[0];
+	// var allOne=document.getElementsByClassName('allOne');
+	// var two=document.getElementsByClassName('two')[0];
+	// var three=document.getElementsByClassName('three')[0];
+	// nav.onmouseover=function(){
+	// 	one.style.transform='rotate(0deg)';
+	// }
+	// header.onmouseleave=function(){
+	// 	one.style.transform='rotate(91deg)';
+	// }
+	// for (var i = 0; i < allOne.length; i++){
+	// 	allOne[i].index=i;
+	// 	allOne[i].onmouseover=function(){
+	// 		this.className='one'+(this.index+1)+' Newbg allOne';
+	// 		if (this.index!=0&&this.index%2!=0) {
+	// 				for (var j = 1; j < 6; j+=2) {
+	// 					two22=document.getElementsByClassName('two'+j)[0];
+	// 					two22.style.display='none';
+	// 				}
+	// 			var two11=document.getElementsByClassName('two'+this.index)[0];
+	// 			two11.style.display='block';
+	// 			two.style.transform='rotate(0deg)';			
+	// 		}else if (this.index!=0&&this.index%2==0){
+	// 				for (var j = 2; j < 6; j+=2) {
+	// 					two22=document.getElementsByClassName('two'+j)[0];
+	// 					two22.style.display='none';
+	// 				}
+	// 			var two11=document.getElementsByClassName('two'+this.index)[0];
+	// 			two11.style.display='block';
+	// 			three.style.transform='rotate(0deg)';	
+	// 		}
+	// 	}
+	// 		allOne[i].onmouseout=function(){
+	// 		this.className='one'+(this.index+1)+' allOne';
+	// 		if (this.index!=0&&this.index%2!=0) {
+	// 			two.style.transform='rotate(91deg)';
+	// 			//var two11=document.getElementsByClassName('two'+this.index)[0];
+	// 		}else if(this.index!=0&&this.index%2==0){
+	// 			three.style.transform='rotate(91deg)';
+
+	// 		}
+
+	// 	}
+	// }
+
+</script>
+</html>
