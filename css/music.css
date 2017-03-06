@@ -1,0 +1,144 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	
+}
+.all{
+	width: 400px;
+	box-sizing: border-box;
+	border-radius: 2%;
+	background-color: #4F6E8D;
+	margin: 30px auto;
+}
+ul,ol{
+
+}
+header{
+	width: 400px;
+	height: 60px;
+	
+}
+header ol{
+	list-style: none;
+}
+header ol li{
+	float: left;
+}
+.btn00{
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	border-radius: 2%;
+	background-image: url(../img/ctrl.png);
+	background-position: 1px -4px;
+	background-size: 165px;
+}
+.btn0{
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	border-radius: 15%;
+	background-image: url(../img/ctrl.png);
+	background-position: -57px -4px;
+	background-size: 165px;
+}
+header ol .btn1{
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	border-radius: 15%;
+	background-image: url(../img/ctrl.png);
+	background-position: -106px -4px;
+	background-size: 165px;
+}
+header ol .btn2{
+	width: 110px;
+	height: 20px;
+	cursor: pointer;
+	position: relative;
+	margin: 15px 0px;
+	margin-right: 10px;
+	color: #fff;
+	background-color: #000;
+	background-position: -106px -4px;
+	background-size: 165px;
+}
+header ol .btn3{
+	width: 80px;
+	height: 4px;
+	cursor: pointer;
+	margin: 23px 0px 23px 0px;
+	color: #fff;
+	position: relative;
+	text-align: center;
+	background-color: #000;
+	background-position: -106px -4px;
+	background-size: 165px;
+}
+header ol .btn3 .btn4{
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	border-radius: 30%;
+	position: absolute;
+	left: 60px;
+	bottom: -8px;
+	background-image: url(../img/vol2.png);
+	background-repeat: no-repeat;
+	background-color: #fff;
+	background-position: -1px -1px;
+	background-size: 25px;
+}
+nav{
+	width: 400px;
+	height: 30px;
+	clear: left;
+	padding-top: 10px;
+	background-image: url(../img/loading.png)
+}
+nav ol{
+	list-style: none;
+}
+nav ol li{
+	width: 100px;
+	height: 20px;
+	float: left;
+	line-height: 20px;
+	margin-left: 10px;
+	text-align: center;
+	font-size: 15px;
+	background-color: #fff;
+}
+section{
+	width: 400px;
+	height: 400px;
+	background-color: #fff;
+}
+section ul{
+	
+}
+section ul li{
+	width: 370px;
+	height: 30px;
+	margin-left: 30px;
+	border-bottom: 1px solid #000;
+}
+footer{
+	width: 370px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 30px;
+}
+.span{
+	display: inline-block;
+	width: 0px;
+	height: 20px;
+	background-color: red;
+}
+.mutinute{	
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	margin-left: 10px;
+}

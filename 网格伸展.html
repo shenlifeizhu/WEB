@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		ul,ol{
+			list-style: none;
+		}
+		.all{
+			width: 95%;
+			margin: 30px auto;
+			background-color: #666;
+		}
+		.all nav li{
+			padding: 0px 10px;
+			float: left;
+		}
+		.all nav{
+			width: 100%;
+			background-color: #000;
+
+		}
+		.all nav ol{
+			width: 50%;
+			padding: 16px 0px;
+			margin: 0px auto;
+			font-size: 1.5vw;
+			color: #fff;
+			
+		}
+		.clearfixed{
+			clear: both;
+		}
+
+		article ul{
+			width: 100%;
+			perspective:2000px;
+			margin: 0px auto;
+			transition: all 5s;
+			transform-style: preserve-3d;
+		}
+		article ul li{
+			width: 16%;
+			float: left;
+			height: 24vh;
+			transition:all 3s;
+		}
+		article ul .first,article ul .last{
+			width: 2%;
+		}
+		section{
+			position: relative;
+		}
+		.title{
+			position: absolute;
+			width: 50px;
+			top: 0px;
+			right: 5vw;
+			height: 50px;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+<div class="all">
+	<nav>
+		<ol>
+			<li>首页</li>
+			<li>关于我们</li>
+			<li>服务介绍</li>
+			<li>游戏列表</li>
+			<li>新闻</li>
+			<li>人才招聘</li>
+			<div class="clearfixed"></div>
+		</ol>
+	</nav>
+	<section>
+		<article>
+			<ul>
+				<li class="One first one one1"></li>
+				<li class="One one one2"></li>
+				<li class="One one one3"></li>
+				<li class="One one one4"></li>
+				<li class="One one one5"></li>
+				<li class="One one one6"></li>
+				<li class="One one one7"></li>
+				<li class="One last one one8"></li>
+				<div class="clearfixed"></div>
+			</ul>			
+			<ul>
+				<li class="One first two"></li>
+				<li class="One two"></li>
+				<li class="One two"></li>
+				<li class="One two"></li>
+				<li class="One two"></li>
+				<li class="One two"></li>
+				<li class="One two"></li>
+				<li class="One last two"></li>
+				<div class="clearfixed"></div>
+			</ul>			
+			<ul>
+				<li class="One first one three"></li>
+				<li class="One one three"></li>
+				<li class="One one three"></li>
+				<li class="One one three"></li>
+				<li class="One one three"></li>
+				<li class="One one three"></li>
+				<li class="One one three"></li>
+				<li class="One last one three"></li>
+				<div class="clearfixed"></div>
+			</ul>
+		</article>
+		<div class="title"></div>
+	</section>
+</div>
+</body>
+<script type="text/javascript">
+	var one=document.getElementsByClassName('one');
+	var One=document.getElementsByClassName('One');
+	var two=document.getElementsByClassName('two');
+	var three=document.getElementsByClassName('three');
+
+	for (var i = 0; i < one.length; i++) {
+		if (i%2==0) {
+			one[i].style.backgroundColor='#1B1B1C'
+		}else{
+			one[i].style.backgroundColor='#26292A'
+		}
+	}
+	for (var i = 0; i < two.length; i++) {
+		if (i%2==0) {
+			two[i].style.backgroundColor='#26292A'
+		}else{
+			two[i].style.backgroundColor='#1B1B1C'
+		}
+	}
+	var title=document.getElementsByClassName('title')[0];
+
+	var N=0;
+	// title.onclick=function(){
+	// 	if (N==0) {
+	// 		// 折叠
+	// 		N=1;
+	// 		for (var i = 0; i < One.length; i++) {
+	// 			if (i<3) {	
+	// 		one[i].style.transition='all 2s '+i+'s';
+	// 		//one[i].style.transformOrigin='top right';
+	// 		//one[i].style.transform='rotateY(-60deg)';			
+	// 		//one[i].style.opacity='0';
+	// 		two[i].style.transition='all 2s '+(i+1)+'s';
+	// 		//two[i].style.transformOrigin='top right';
+	// 		//two[i].style.transform='rotateY(-60deg)';			
+	// 		//two[i].style.opacity='0';
+	// 		three[i].style.transition='all 2s '+(i+2)+'s';
+	// 		One[i].style.transformOrigin='top right';
+	// 		One[i].style.transform='rotateY(-60deg)';			
+	// 		One[i].style.opacity='0';	
+
+	// 		}else if(i>3){
+	// 			one[i].style.transition='all 2s '+(6-i)+'s';
+	// 			one[i].style.transformOrigin='top left';
+	// 			one[i].style.transform='rotateY(60deg)';			
+	// 			one[i].style.opacity='0';				
+	// 			two[i].style.transition='all 2s '+(7-i)+'s';
+	// 			two[i].style.transformOrigin='top left';
+	// 			two[i].style.transform='rotateY(60deg)';			
+	// 			two[i].style.opacity='0';
+	// 			three[i].style.transition='all 2s '+(8-i)+'s';
+	// 			three[i].style.transformOrigin='top left';
+	// 			three[i].style.transform='rotateY(60deg)';			
+	// 			three[i].style.opacity='0';
+	// 		}else if(i==3){				
+	// 			one[i].style.transition='all 2s 4s';
+	// 			one[i].style.transformOrigin='bottom left';
+	// 			one[i].style.transform='rotateX(60deg)';			
+	// 			one[i].style.opacity='0';
+	// 			three[i].style.transition='all 2s 6s';
+	// 			three[i].style.transformOrigin='top left';
+	// 			three[i].style.transform='rotateX(-60deg)';			
+	// 			three[i].style.opacity='0';	
+	// 			two[i].style.transition='all 2s 7s';
+	// 			two[i].style.transformOrigin='bottom left';
+	// 			two[i].style.transform='rotateX(60deg)';			
+	// 			two[i].style.opacity='0';
+	// 		} 
+	// 	}
+	// 	return;
+
+	// 	}else{// 展开动画
+	// 		N=0;
+	// 		for (var i = 0; i < 8; i++) {
+	// 			if (i<3) {	
+	// 		one[i].style.transition='all 2s '+(6-i)+'s';
+	// 		one[i].style.transformOrigin='top right';
+	// 		one[i].style.transform='rotateY(0deg)';			
+	// 		one[i].style.opacity='1';			
+	// 		two[i].style.transition='all 2s '+(5-i)+'s';
+	// 		two[i].style.transformOrigin='top right';
+	// 		two[i].style.transform='rotateY(0deg)';			
+	// 		two[i].style.opacity='1';	
+	// 		three[i].style.transition='all 2s '+(4-i)+'s';
+	// 		three[i].style.transformOrigin='top right';
+	// 		three[i].style.transform='rotateY(0deg)';			
+	// 		three[i].style.opacity='1';	
+	// 		}else if(i>3){			
+	// 			one[i].style.transition='all 2s '+(i)+'s';
+	// 			one[i].style.transformOrigin='top left';
+	// 			one[i].style.transform='rotateY(0deg)';			
+	// 			one[i].style.opacity='1';	
+	// 			two[i].style.transition='all 2s '+(i-1)+'s';
+	// 			two[i].style.transformOrigin='top left';
+	// 			two[i].style.transform='rotateY(0deg)';			
+	// 			two[i].style.opacity='1';
+	// 			three[i].style.transition='all 2s '+(i-2)+'s';
+	// 			three[i].style.transformOrigin='top left';
+	// 			three[i].style.transform='rotateY(0deg)';			
+	// 			three[i].style.opacity='1';
+	// 		}else if(i==3){		
+	// 			one[i].style.transition='all 2s 1s';
+	// 			one[i].style.transformOrigin='bottom left';
+	// 			one[i].style.transform='rotateX(0deg)';			
+	// 			one[i].style.opacity='1';		
+	// 			two[i].style.transition='all 2s';
+	// 			two[i].style.transformOrigin='bottom left';
+	// 			two[i].style.transform='rotateX(0deg)';			
+	// 			two[i].style.opacity='1';
+	// 			three[i].style.transition='all 2s 1s';
+	// 			three[i].style.transformOrigin='top left';
+	// 			three[i].style.transform='rotateX(0deg)';			
+	// 			three[i].style.opacity='1';
+	// 		} 
+	// 		}
+	// 	}
+	// }
+	title.onclick=function(){
+		if (N==0) {
+			// 折叠
+			N=1;
+			for (var i = 0; i < 8; i++) {
+				if (i<3) {	
+			one[i].style.transition='all 2s '+i+'s';
+			one[i].style.transformOrigin='top right';
+			one[i].style.transform='rotateY(-60deg)';			
+			one[i].style.opacity='0';
+			two[i].style.transition='all 2s '+(i+1)+'s';
+			two[i].style.transformOrigin='top right';
+			two[i].style.transform='rotateY(-60deg)';			
+			two[i].style.opacity='0';
+			three[i].style.transition='all 2s '+(i+2)+'s';
+			three[i].style.transformOrigin='top right';
+			three[i].style.transform='rotateY(-60deg)';			
+			three[i].style.opacity='0';	
+
+			}else if(i>3){
+				one[i].style.transition='all 2s '+(6-i)+'s';
+				one[i].style.transformOrigin='top left';
+				one[i].style.transform='rotateY(60deg)';			
+				one[i].style.opacity='0';				
+				two[i].style.transition='all 2s '+(7-i)+'s';
+				two[i].style.transformOrigin='top left';
+				two[i].style.transform='rotateY(60deg)';			
+				two[i].style.opacity='0';
+				three[i].style.transition='all 2s '+(8-i)+'s';
+				three[i].style.transformOrigin='top left';
+				three[i].style.transform='rotateY(60deg)';			
+				three[i].style.opacity='0';
+			}else if(i==3){				
+				one[i].style.transition='all 2s 4s';
+				one[i].style.transformOrigin='bottom left';
+				one[i].style.transform='rotateX(60deg)';			
+				one[i].style.opacity='0';
+				three[i].style.transition='all 2s 6s';
+				three[i].style.transformOrigin='top left';
+				three[i].style.transform='rotateX(-60deg)';			
+				three[i].style.opacity='0';	
+				two[i].style.transition='all 2s 7s';
+				two[i].style.transformOrigin='bottom left';
+				two[i].style.transform='rotateX(60deg)';			
+				two[i].style.opacity='0';
+			} 
+		}
+		return;
+
+		}else{// 展开动画
+			N=0;
+			for (var i = 0; i < 8; i++) {
+				if (i<3) {	
+			one[i].style.transition='all 2s '+(6-i)+'s';
+			one[i].style.transformOrigin='top right';
+			one[i].style.transform='rotateY(0deg)';			
+			one[i].style.opacity='1';			
+			two[i].style.transition='all 2s '+(5-i)+'s';
+			two[i].style.transformOrigin='top right';
+			two[i].style.transform='rotateY(0deg)';			
+			two[i].style.opacity='1';	
+			three[i].style.transition='all 2s '+(4-i)+'s';
+			three[i].style.transformOrigin='top right';
+			three[i].style.transform='rotateY(0deg)';			
+			three[i].style.opacity='1';	
+			}else if(i>3){			
+				one[i].style.transition='all 2s '+(i)+'s';
+				one[i].style.transformOrigin='top left';
+				one[i].style.transform='rotateY(0deg)';			
+				one[i].style.opacity='1';	
+				two[i].style.transition='all 2s '+(i-1)+'s';
+				two[i].style.transformOrigin='top left';
+				two[i].style.transform='rotateY(0deg)';			
+				two[i].style.opacity='1';
+				three[i].style.transition='all 2s '+(i-2)+'s';
+				three[i].style.transformOrigin='top left';
+				three[i].style.transform='rotateY(0deg)';			
+				three[i].style.opacity='1';
+			}else if(i==3){		
+				one[i].style.transition='all 2s 1s';
+				one[i].style.transformOrigin='bottom left';
+				one[i].style.transform='rotateX(0deg)';			
+				one[i].style.opacity='1';		
+				two[i].style.transition='all 2s';
+				two[i].style.transformOrigin='bottom left';
+				two[i].style.transform='rotateX(0deg)';			
+				two[i].style.opacity='1';
+				three[i].style.transition='all 2s 1s';
+				three[i].style.transformOrigin='top left';
+				three[i].style.transform='rotateX(0deg)';			
+				three[i].style.opacity='1';
+			} 
+			}
+		}
+	}
+</script>
+</html>

@@ -1,0 +1,59 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+ul,ol{
+	list-style: none;
+}
+body>div{
+	width: 900px;
+	height: 660px;
+	background-color: yellow;
+}
+div ul li{
+	width: 200px;
+	height: 100px;
+	margin: 10px;
+	background-size: 200px 100px;
+	background-repeat: no-repeat;
+	background-color: red;
+	float: left;
+}
+.li1{
+	background-image: url(../img/article-1.png);
+}
+.li2{
+	background-image: url(../img/article-2.png);
+}
+.li3{
+	background-image: url(../img/article-3.png);
+}
+.li4{
+	background-image: url(../img/article-4.png);
+}
+.li5{
+	background-image: url(../img/article-5.png);
+}
+.li6{
+	background-image: url(../img/1.gif);
+}
+.li7{
+	background-image: url(../img/2.gif);
+}
+.li8{
+	background-image: url(../img/3.gif);
+}
+.li9{
+	background-image: url(../img/4.gif);
+}
+.li10{
+	background-image: url(../img/article-5.png);
+}
+.div1{
+	width: 200px;
+	height: 30px;
+	margin-top: 70px;
+	line-height: 30px;
+	text-align: center;
+	background-color: rgba(210,208,125,0.5);
+}

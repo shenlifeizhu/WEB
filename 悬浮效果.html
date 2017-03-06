@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+	ol,ul{
+		list-style: none;
+	}
+		.all{
+			width: 100%;
+			height: 100%;
+			margin: 30px auto;
+			padding: 30px;
+			background-color: yellow;
+		}
+		.all ol li{
+			float: left;
+			width: 20%;
+			position: relative;
+			padding: 2.5%;
+		}
+		.all .clearFixed{
+			clear: both;
+		}
+	/*	.all .Fixed{
+			position: absolute;
+			display: none;
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			margin: auto;
+			text-align: center;
+			background-color: rgba(0,0,0,0.5);
+		}*/
+		.all .Text{
+			width: 80%;
+			height: 40%;
+			padding-top: 40%;
+			position: absolute;
+			/*display: none;*/
+			transform: scale(0);
+			text-align: center;
+			background-color: rgba(0,0,0,0.5);
+			top: 0px;
+			bottom: 0px;
+			font-size: 20px;
+			left: 0px;
+			right: 0px;
+			color: #fff;
+			margin: auto;
+			transition: all 1s linear;
+		}
+		.all ol li:hover .Text{
+			transform: scale(1);
+		}
+		/*.all ol li:hover .Fixed{
+			display: block;
+		}
+		.all ol li:hover .Text{
+
+			display: block;
+			animation: myText 2s 1;
+		}*/
+		/*@keyframes myText{
+			from{
+				width: 0px;
+				height: 0px;
+				line-height: 0px;
+				padding-top: 0px;
+			}
+			to{
+				width: 80%;
+				height: 40%;
+				padding-top: 40%;
+			}
+		}*/
+		 .img{
+			position: fixed;
+			background-color: rgba(0,0,0,0.5);
+			top: 0px;
+			bottom: 0px;
+			font-size: 20px;
+			left: 0px;
+			right: 0px;
+			display: none;
+			height: 100%;
+			margin: auto;
+			z-index: 3;
+		}
+		
+		.title .left,.title .right1,.title .right2{
+			width: 33px;
+			height: 66px;
+			margin: 0px 20px;
+			float: right;
+			background-image: url(img/jiantou.png);
+		}
+		.title .left{
+			float: left;
+			background-position: 0px 0px;
+		}
+		.title .right1{
+			background-position: -33px 0px;
+		}
+		.title{
+			width: 100%;
+			height: 66px;
+			border:3px solid #171715;
+			background-color: #1f1f1f;
+			position: absolute;
+			bottom: 0px;
+		}
+		.img  .float{
+			position: relative;
+			height:344px;
+			width: 100%;
+			top: 0px;
+			left: 0px;
+			margin: auto;
+			z-index: 2;
+		}
+		.img .float li{
+			position: absolute;
+		}
+		.img .float .li1{
+			text-align: center;
+			left: -383px;
+		}
+		.img .float .li2{
+			text-align: center;
+			width: 100%;
+		}
+		.img .float .li3{
+			text-align: center;
+			right: -383px;
+		}
+
+	</style>
+</head>
+<body>
+<div class="all">
+	<ol>
+		<li><img src="img/fuzhuang-banner2-0.jpg" width="100%">
+		<div class="Fixed"></div><div class="Text">click</div></li>
+		<li><img src="img/fuzhuang-banner2-1.jpg" width="100%">
+		<div class="Fixed"></div><div class="Text">click</div></li>
+		<li><img src="img/fuzhuang-banner2-2.jpg" width="100%">
+		<div class="Fixed"></div><div class="Text">click</div></li>
+		<li><img src="img/fuzhuang-banner2-3.jpg" width="100%">
+		<div class="Fixed"></div><div class="Text">click</div></li>
+		<li><img src="img/fuzhuang-banner2-4.jpg" width="100%">
+		<div class="Fixed"></div><div class="Text">click</div></li>
+		<li><img src="img/fuzhuang-banner2-5.jpg" width="100%">
+		<div class="Fixed"></div><div class="Text">click</div></li>
+		<li><img src="img/fuzhuang-banner2-6.jpg" width="100%">
+		<div class="Fixed"></div><div class="Text">click</div></li>
+		<li><img src="img/fuzhuang-banner2-7.jpg" width="100%">
+		<div class="Fixed"></div><div class="Text">lick</div></li>
+		<div class="clearFixed"></div>
+	</ol>
+</div>
+<div class="img">
+	<ul class="float">
+		<li class="li1"><img src="img/fuzhuang-banner2-7.jpg" class="Img0"></li>
+		<li class="li2"><img src="img/fuzhuang-banner2-7.jpg" class="Img1"></li>
+		<li class="li3"><img src="img/fuzhuang-banner2-7.jpg" class="Img2"></li>
+	</ul>
+	<div class="clearFixed"></div>
+	<div class="title">
+		<ol>
+			<li class="left button"></li>
+			<li class="right1 button"></li>
+			<li class="right2 button"></li>
+		</ol>
+	</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+<script type="text/javascript" src='js/jquery-3.1.1.min.js'></script>
+<script type="text/javascript">
+				var W=document.documentElement.clientWidth;
+				var H=document.documentElement.clientHeight;
+				console.log(H,W);
+	(function(){
+		var Text=document.getElementsByClassName('Text');
+		var Img1=document.getElementsByClassName('Img1')[0];
+		var Img0=document.getElementsByClassName('Img0')[0];
+		var Img2=document.getElementsByClassName('Img2')[0];
+		var img=document.getElementsByClassName('img')[0];
+		var button=document.getElementsByClassName('button');
+		var ul=document.getElementsByClassName('float')[0];
+		var li2=document.getElementsByClassName('li2')[0];
+		for (var i = 0; i < button.length; i++) {
+			button[i].index=i;
+			// 左右键事件
+			button[i].onclick=function(){
+				if (this.index==0) {
+					img.style.display='none';
+				}else if(this.index==1){
+					n+=1;
+					if (n>=7) {
+						n=0;
+					}
+				var W=document.documentElement.clientWidth;
+				NewLi=$('.float li:first').clone();
+				// $('.li2').animate({right:'-'+W+'px'});				
+				// $('.li1').animate({width:'100%',left:'0px'},1000);
+				// $('.float li:first').children('img').attr('class','Img1');
+				// $('.float li:first').attr('class','li2');
+				// $('.float li:first').before(NewLi);
+				// $('.float li:last').remove();
+				// $('.float li:last').children('img').attr('class','Img2');
+				// $('.float li:last').attr('class','li3');
+				// $('.float li:first').children('img').attr('src','img/fuzhuang-banner2-'+n+'.jpg');
+				//$('.li3').animate({left:+W+'px'},300);	
+				}else{
+					n-=1;
+					if (n==-1) {
+						n=7;
+					}
+				console.log(n);
+				var W=document.documentElement.clientWidth;
+				newLi=$('.li3').clone();
+				$('.li2').animate({left:'-'+W+'px'},1000);				
+				$('.li3').animate({width:'100%',right:'0px'},1000);
+				$('.float li:last').children('img').attr('class','Img1');
+				$('.float li:last').attr('class','li2');
+				$('.float li:first').remove();
+				$('.float').append(newLi);
+				$('.float li:last').children('img').attr('class','Img2');
+				$('.float li:first').children('img').attr('class','Img0');
+				$('.float li:first').attr('class','li1');
+				$('.Img2').attr('src','img/fuzhuang-banner2-'+n+'.jpg');			
+				}
+			}
+		}
+		for (var i = 0; i < Text.length; i++) {
+			Text[i].index=i;
+			Text[i].onclick=function(){
+				n=this.index;
+				// var body=document.getElementsByTagName('body')[0];
+				// Height=document.defaultView.getComputedStyle(ul,null).height;
+				img.style.display='block';
+				// 获取浏览器窗口的高宽
+				var W=document.documentElement.clientWidth;
+				var H=document.documentElement.clientHeight;
+				console.log(H,W);
+				ul.style.top=(H-344)/2+'px';
+				
+				//ul.style.top=body.scrollTop+'px';
+				Img1.setAttribute('src','img/fuzhuang-banner2-'+this.index+'.jpg');
+			}
+		}
+		// 键盘事件
+		document.onkeydown=function(event){
+			//var e=evevt||window.event||arguments.callee.caller.arguments[0];
+			var e=event.srcElement;
+			if (event.keyCode==27) {//按键esc
+				img.style.display='none';
+			}else if (event.keyCode==37) {
+				n-=1;
+					if (n==-1) {
+						n=7;
+					}
+				Img1.setAttribute('src','img/fuzhuang-banner2-'+n+'.jpg');
+			}else if (event.keyCode==39) {
+					n+=1;
+					if (n>=7) {
+						n=0;
+					}
+					Img1.setAttribute('src','img/fuzhuang-banner2-'+n+'.jpg');
+			}
+		}
+	})()
+</script>
+</html>

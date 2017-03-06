@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		div{
+			width: 650px;
+			height: 30px;
+			margin: 50px auto;
+		}
+		select{
+			width: 200px;
+			height: 30px;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<select class="sheng">
+		<option class="one">请选择</option>
+	</select>
+	<select class="shi">
+		<option>请选择</option>
+	</select>
+	<select class="xian">
+		<option>请选择</option>
+	</select>
+</div>
+
+</body>
+<script type="text/javascript" src='js/jquery-3.1.1.min.js'></script>
+<script type="text/javascript" src='js/json.js'></script>
+<script type="text/javascript">
+var select=document.getElementsByTagName('select');
+for (var i = 0; i < provinceList.length; i++){
+	option=document.createElement('option');
+	option.innerHTML=provinceList[i].name;
+	select[0].appendChild(option);
+	}
+var one=document.getElementsByClassName('one')[0];
+select[0].onchange=function(){
+	if (this.value=='请选择') {
+		$('.shi').children('option:gt(0)').remove();
+		$('.xian').children('option:gt(0)').remove();
+		return;
+	}
+	$('.shi').children('option:gt(0)').remove();
+	$('.xian').children('option:gt(0)').remove();
+	var sheng=document.querySelectorAll('.sheng option');
+	for (var i = 0; i < sheng.length; i++){
+		Text=sheng[i].value;
+		if (Text==select[0].value) {
+			break;
+		}
+	}
+	for (var j = 0; j <provinceList[i-1].cityList.length; j++) {
+		option=document.createElement('option');
+		option.innerHTML=provinceList[i-1].cityList[j].name;
+		select[1].appendChild(option);
+	}
+	INDEX=i;
+	fun(INDEX);
+}
+select[1].onchange=function(){
+		if (this.value=='请选择') {
+		$('.xian').children('option:gt(0)').remove();
+		return;
+	}
+		var shi=document.querySelectorAll('.shi option');
+		for (var i = 0; i < shi.length; i++){
+			Text=shi[i].value;
+			if (Text==select[1].value) {
+				break;
+			}
+		}
+		$('.xian').children('option:gt(0)').remove();
+		for (var j = 0; j <provinceList[INDEX].cityList[i-1].areaList.length; j++) {
+			option=document.createElement('option');
+			option.innerHTML=provinceList[INDEX].cityList[i-1].areaList[j];
+			select[2].appendChild(option);
+		}
+}
+function fun(num){
+	console.log(num);
+}
+</script>
+</html>
