@@ -1,0 +1,234 @@
+/*主体*/
+main {
+  background: url('../../src/images/clients-main.jpg') no-repeat center;
+  height: 1563px;
+  section {
+    position: relative;
+    /*第一版:我们的客户*/
+    &.client {
+      background: url('../../src/images/expertise-bj4.png') no-repeat center center;
+      height: 642px;
+      padding-top: 106px;
+      img {
+        display: block;
+        margin: auto;
+      }
+      span {
+        display: block;
+        font-size: 24px;
+        color: #ababab;
+        text-align: center;
+        margin: 20px 0 74px;
+      }
+      & > a {
+        background: url('../../src/images/top-ico4.png');
+        &:hover {
+          background: url('../../src/images/top-ico4-hover.png');
+        }
+      }
+    }
+    /*第二版:客户的声音*/
+    &.voice {
+      height: 724px;
+      padding-top: 66px;
+      & > img {
+        display: block;
+        margin: auto;
+      }
+      div.line {
+        margin-top: 30px;
+        height: 3px;
+        background: url('../../src/images/border-bottom2.png') center no-repeat;
+      }
+      div.show-box {
+        padding-top: 100px;
+        &:hover div.content i.left {
+          opacity: 1;
+          transition: .5s
+        }
+        &:hover div.content i.right {
+          opacity: 1;
+          transition: .5s
+        }
+        div.content {
+          position: relative;
+          width: 1122px;
+          height: 252px;
+          margin: auto;
+          border: 1px solid #404040;
+          border-radius: 20px;
+          background: #323232;
+          ul li {
+            position: absolute;
+            color: #D8D8D8;
+            text-indent: 2em;
+            line-height: 2em;
+            width: 100%;
+            box-sizing: border-box;
+            opacity: 0;
+            padding: 30px 40px 40px 40px;
+            transition: .3s;
+            span {
+              display: block;
+              text-align: right;
+            }
+            &:nth-child(4) {
+              p {
+                font-size: 24px;
+              }
+            }
+            &:nth-child(7) {
+              p {
+                font-size: 24px;
+              }
+            }
+            &:nth-child(9) {
+              p {
+                font-size: 24px;
+              }
+            }
+            &:nth-child(10) {
+              p {
+                font-size: 24px;
+              }
+            }
+            &:nth-child(11) {
+              p {
+                font-size: 24px;
+              }
+            }
+            &:nth-child(12) {
+              p {
+                font-size: 24px;
+              }
+            }
+            &.active {
+              opacity: 1;
+              transition: .3s;
+            }
+          }
+          & > i {
+            position: absolute;
+            z-index: 1;
+            width: 60px;
+            height: 120px;
+            &.left {
+              cursor: pointer;
+              opacity: 0;
+              background: url('../../src/images/img-btn.png');
+              left: -150px;
+              top: 100px;
+              transition: .3s;
+              &:hover {
+                background: url('../../src/images/img-btn-hover.png');
+                transition: .3s;
+              }
+            }
+            &.right {
+              cursor: pointer;
+              opacity: 0;
+              background: url('../../src/images/img-btn2.png');
+              right: -150px;
+              top: 100px;
+              transition: .3s;
+              &:hover {
+                background: url('../../src/images/img-btn-hover2.png');
+                transition: .3s;
+              }
+            }
+          }
+        }
+        div.logos {
+          position: relative;
+          top: -1px;
+          z-index: 1;
+          overflow: hidden;
+          width: 1122px;
+          height: 105px;
+          margin: auto;
+          padding-top: 60px;
+          ul {
+            position: relative;
+            width: 1224px;
+            left: 0;
+            li {
+              position: relative;
+              cursor: pointer;
+              float: left;
+              width: 91px;
+              height: 85px;
+              line-height: 85px;
+              margin-right: 11px;
+              background: url('../../src/images/c_bg1.png') no-repeat center center;
+              text-align: center;
+              img {
+                vertical-align: middle;
+              }
+              &:before {
+                content: '.';
+                visibility: hidden;
+              }
+              i {
+                display: none;
+                position: absolute;
+                width: 40px;
+                height: 19px;
+                bottom: 127px;
+                left: 23px;
+                background: url('../../src/images/sanjiao.png');
+              }
+              &.active {
+                background: url('../../src/images/c_bg2.png') no-repeat center center;
+                i {
+                  display:block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    /*锚链接*/
+    & > a {
+      position: absolute;
+      width: 43px;
+      height: 43px;
+      left: 50%;
+      margin-left: -21px;
+      bottom: 30px;
+      cursor: pointer;
+      background: url('../../src/images/top-ico3.png');
+      transition: .3s;
+      &:hover {
+        background: url('../../src/images/top-ico3-hover.png');
+        transition: .3s
+      }
+    }
+  }
+}
+/*页脚*/
+body > footer {
+  background: rgba(255, 255, 255, 0);
+  div.footer-bottom {
+    margin-top: -140px;
+    background: url('../../src/images/work-foot-bj2.png') no-repeat center center;
+    ul {
+      color: #000;
+      li {
+        &:nth-child(2) {
+          i {
+            &:nth-child(1) {
+              background: url('../../src/images/QQ-ICO.png') no-repeat;
+            }
+            &:nth-child(2) {
+              background: url('../../src/images/WX-ICO.png') no-repeat;
+            }
+            &:nth-child(3) {
+              background: url('../../src/images/WB-ICO.png') no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>muyu</title>
+    <link rel="stylesheet" href="../css/common/common.css">
+    <link rel="stylesheet" href="../css/pages/index.css">
+    <script src="../components/jquery/dist/jquery.js"></script>
+    <script src="../js/index.js"></script>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=2.0&ak=iMZhsOXqNlqvQYG5cjGKBZ0IMXNX3GXK"></script>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+    <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css"/>
+</head>
+<body>
+<!--导航栏-->
+<header>
+    <!--遮罩层-->
+    <!--<div class="loading"><img src="../src/images/main_spinnerr.gif"></div>-->
+    <a href="/"><img src="../src/images/logo.png"></a>
+    <nav>
+        <ul class="menu">
+            <li class="active"><a href="./index.html"><p><span>首页</span><span>首页</span></p></a></li>
+            <li><a href="./about.html"><p><span>关于</span><span>关于木鱼</span></p></a></li>
+            <li><a href="./muyuO2O.html"><p><span>O2O</span><span>木鱼O2O</span></p></a></li>
+            <li><a href="./muyuUED.html"><p><span>UED</span><span>木鱼UED</span></p></a></li>
+            <li><a href="./mobiao.html"><p><span>摩比奥</span><span>摩比奥</span></p></a></li>
+            <li><a href=""><p><span>案例</span><span>木鱼案例</span></p></a></li>
+            <li><a href="./customers.html"><p><span>客户</span><span>木鱼客户</span></p></a></li>
+            <li><a href="./muyuDONGTAI.html"><p><span>动态</span><span>木鱼动态</span></p></a></li>
+        </ul>
+        <ul class="contact">
+            <li><a href=""><img src="../src/images/tel-icooo.png"><span>0551-6561 2007</span></a></li>
+            <li><a href=""><img src="../src/images/tel-ico2oo.png"><span>木鱼找伙伴</span></a></li>
+            <li><a href=""><img src="../src/images/tel-ico3oo.png"><span>点击在线咨询</span></a></li>
+        </ul>
+    </nav>
+    <div class="button">
+        <a class="closePicture"></a>
+        <a class="restart"></a>
+    </div>
+</header>
+<div class="wrap">
+    <div class="video">
+        <div class="picture">
+            <a href="#"></a>
+        </div>
+    </div>
+
+    <div class="carousel">
+        <div class="carousel-image">
+            <div class="first-carousel">
+                <div class="first-part"><img src="../src/images/muyubanner1.png"></div>
+            </div>
+            <div class="second-carousel">
+                <div class="first-part"><img src="../src/images/muyubanner2.png"></div>
+                <div class="second-part"><img src="../src/images/muyubanner3.png"></div>
+            </div>
+            <div class="third-carousel">
+                <div class="first-part"><img src="../src/images/xiaotou1.png"></div>
+                <div class="second-part"><img src="../src/images/xiaotou2.png"></div>
+            </div>
+            <div class="forth-carousel">
+                <div class="first-part"><img src="../src/images/banner-logo.png"></div>
+                <div class="second-part"><img src="../src/images/banner-text1.png"></div>
+                <div class="third-part"><img src="../src/images/banner-text2.png"></div>
+                <div class="forth-part"><img src="../src/images/banner-text3.png"></div>
+            </div>
+            <div class="fifth-carousel">
+                <div class="first-part"><img src="../src/images/banner-text4.png"></div>
+                <div class="second-part"><img src="../src/images/women.png"></div>
+                <div class="third-part"><img src="../src/images/glb.png"></div>
+                <div class="forth-part"><img src="../src/images/phone.png"></div>
+            </div>
+            <div class="sixth-carousel">
+                <div class="first-part"><img src="../src/images/banner-text5.png"></div>
+                <div class="second-part"><img src="../src/images/2-2.png"></div>
+            </div>
+        </div>
+        <div class="carousel-list">
+            <a class="first"></a>
+            <a class="second"></a>
+            <a class="third"></a>
+            <a class="forth"></a>
+            <a class="fifth"></a>
+            <a class="sixth"></a>
+        </div>
+        <div class="carousel-down">
+            <a></a>
+        </div>
+    </div>
+
+    <div class="article">
+        <div class="what">
+            <img src="../src/images/what-title.png">
+        </div>
+        <div class="article-border"></div>
+        <div class="title">
+            <span>中国品牌企业互联网+解决方案&nbsp;&nbsp;· &nbsp;&nbsp; 中国金牌UED设计机构</span>
+        </div>
+        <div class="what-kind">
+            <a>
+                <div class="design">
+                    <div class="design-image"></div>
+                    <div class="what-design">
+                        <div class="design-box">
+                            <div>
+                                <p>电商运营</p>
+                                <span>品牌策略 · 爆款打造<br/>引流聚粉</span>
+                            </div>
+                            <span class="what-btn">查看更多</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="move">
+                    <div class="move-image"></div>
+                    <div class="what-move">
+                        <div class="move-box">
+                            <div>
+                                <p>x新媒体运营</p>
+                                <span>公众号界面规划 · 粉丝经营<br/>营销活动 · 内容运营</span>
+                            </div>
+                            <span class="what-btn">查看更多</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="brand">
+                    <div class="brand-image"></div>
+                    <div class="what-brand">
+                        <div class="brand-box">
+                            <div>
+                                <p>UED用户体验</p>
+                                <span>高端网站建设 · 视觉设计<br/>互动体验H5设计</span>
+                            </div>
+                            <span class="what-btn">查看更多</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="ui">
+                    <div class="ui-image"></div>
+                    <div class="what-ui">
+                        <div class="ui-box">
+                            <div>
+                                <p>技术服务</p>
+                                <span>电商平台建设 · APP与微信开发<br/>摇一摇解决方案</span>
+                            </div>
+                            <span class="what-btn">查看更多</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="ui2">
+                    <div class="ui2-image"></div>
+                    <div class="what-ui2">
+                        <div class="ui2-box">
+                            <div>
+                                <p>数字营销</p>
+                                <span>传播策略 · 媒体投放<br/>社会化营销 · 数据分析</span>
+                            </div>
+                            <span class="what-btn">查看更多</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <a class="what-down"></a>
+    </div>
+    <div class="content">
+        <div class="work">
+            <img src="../src/images/work.png">;
+        </div>
+        <div class="work-border"></div>
+        <div class="work-group">
+            <div class="work-group-one">
+                <a>
+                    <div class="family-box">
+                        <div class="card">
+                            <div class="back">
+                                <span>中国露营网</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+                <a>
+                    <div class="city-box">
+                        <div class="card">
+                            <div class="back">
+                                <span>宝能惠谷</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="life-box">
+                        <div class="card">
+                            <div class="back">
+                                <span>和福顺</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="nature-box">
+                        <div class="card">
+                            <div class="back">
+                                <span>龙禧传播</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="love-box">
+                        <div class="card">
+                            <div class="back">
+                                <span>faster商城</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </a>
+                <a>
+                    <div class="job-box">
+                        <div class="card">
+                            <div class="back">
+                                <span>优美环保</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="sunrise-box">
+                        <div class="card">
+                            <div class="back">
+                                <span>大觉禅寺</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="btn-box">
+                        <div class="work-btn">
+                            <div class="back">
+                                <img src="../src/images/dingzhi.png">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="work-group-two">
+                <a>
+                    <div class="family-box">
+                        <div class="card">
+                            <div class="back">
+                                <span>中国电信</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+                <a>
+                    <div class="city-box">
+                        <div class="card">
+                            <div class="back">
+                                <span>中国科技大学</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="life-box">
+                        <div class="card">
+                            <div class="back">
+                                <span>奇瑞集团</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="nature-box">
+                        <div class="card">
+                            <div class="back">
+                                <span>安徽卫视</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="love-box">
+                        <div class="card">
+                            <div class="back">
+                                <span>微商银行</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </a>
+                <a>
+                    <div class="job-box">
+                        <div class="card">
+                            <div class="back">
+                                <span>安徽出版集团</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="sunrise-box">
+                        <div class="card">
+                            <div class="back">
+                                <span>中国中铁</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="btn-box">
+                        <div class="work-btn">
+                            <div class="back">
+                                <span>南翔集团</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="choice">
+            <ul>
+                <li class="case hover-choice">案例</li>
+                <li class="customer">客户</li>
+            </ul>
+        </div>
+        <a class="work-button"></a>
+    </div>
+
+    <div class="dynamic">
+        <div class="new">
+            <img src="../src/images/new.png">
+        </div>
+        <div class="new-border"></div>
+        <div class="honor">
+            <div class="honor-content">
+                <div class="honor-first-list">
+                    <div class="list-picture">
+                        <img src="../src/images/new-ico1.png">
+                    </div>
+                    <div class="right-content">
+                        <div class="first-content">
+                            <p>
+                                <a>木鱼网络出品的"闲匠"荣获优秀创业项目称号</a>
+                            </p>
+                            <a>
+                                经过初审、专家评审等层层筛选，木鱼网络"闲匠"项目在第八届中国云计算大会创新创业评选大赛
+                                上，荣获"2016云计算大数据创新创业评选"——合肥地区优秀创业项目称号。
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="honor-second-list">
+                    <div class="left-content">
+                        <div class="second-content">
+                            <p>
+                                <a>领先的微信摇一摇首次亮相中国(合肥)互联网大会</a>
+                            </p>
+                            <a>
+                                2015中国(合肥)互联网大会于本月13、14日在合肥滨湖会展中心成功举办。
+                                本届大会木鱼网络微信摇一摇更是点燃了现场所有参会人员的激情，把大会现场气氛推向高潮。
+                            </a>
+                        </div>
+                    </div>
+                    <div class="list-picture">
+                        <img src="../src/images/new-ico1.png">
+                    </div>
+                </div>
+                <div class="honor-third-list">
+                    <div class="list-picture">
+                        <img src="../src/images/new-ico1.png">
+                    </div>
+                    <div class="right-content">
+                        <div class="third-content">
+                            <p>
+                                <a>木鱼网络助力安徽互联网大会成功举办</a>
+                            </p>
+                            <a>
+                                在安徽省经信委、安徽省通信管理局的指导下，本届大会取得圆满成功。
+                                木鱼网络作为协办单位参与了大会的全过程，提出“互联网+ 点亮梦想”
+                                口号并负责主视觉的创意设计及大会官网建设
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div  class="honor-forth-list">
+                    <div class="left-content">
+                        <div class="forth-content">
+                            <p>
+                                <a>将遇水茶叶|木鱼网络整体打造将遇水茶电商品牌解决方案</a>
+                            </p>
+                            <a>
+                                从LOGO、品牌定位、内容打造、网站设计（淘宝店装修）、H5开发、VI设计，进行整合打包的传播构建，
+                                并使整体风格一脉相承，传递将遇水的统一感和品牌品质感。
+                            </a>
+                        </div>
+                    </div>
+                    <div class="list-picture">
+                        <img src="../src/images/new-ico3.png">
+                    </div>
+                </div>
+                <div  class="honor-fifth-list">
+                    <div class="list-picture">
+                        <img src="../src/images/new-ico3.png">
+                    </div>
+                    <div class="right-content">
+                        <div class="fifth-content">
+                            <p>
+                                <a>假如时光老去，我们留下的绝不仅仅是回忆和照片</a>
+                            </p>
+                            <a>
+                                这才是我们真正的2015
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-more">
+                <a>查看更多</a>
+            </div>
+            <a class="honor-down"></a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="contact">
+            <img src="../src/images/contact.png">
+        </div>
+        <div class="border-bottom"></div>
+        <div class="map">
+            <div id="allmap">
+            </div>
+            <div><input id="cityName" type="text" style="display: none"/>
+                <input type="button" value="查询" onclick="theLocation()" style="display: none"/></div>
+        </div>
+        <div class="footer-bottom">
+            <ul>
+                <li>有心意 有新意 木鱼有约</li>
+                <li><i></i><i></i><i></i></li>
+                <li>
+                    <span>欢迎拨打</span>
+                    <div>
+                        <div class="tel-box">
+                            <div class="tel-wrap">
+                                <p>18905513707</p>
+                                <p>0551-6561 2007</p>
+                                <p>18905513707</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <p class="shanghai">木鱼网络（上海） 地址：上海市共和新路4995号3号楼1305室（宝山万达广场） 电话：137-0186 1555</p>
+            <p class="hefei">木鱼网络（合肥） 地址：合肥市东二环与南淝河支路交口玫瑰绅城 A19-103别墅 电话：189-0551 3707</p>
+            <p class="location"> 2014 www.muyu007.com All Rights Reserved. 皖B2-20110088</p>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="left-nav">
+    <ul>
+        <li><a href="javascript:;" class="active">顶部<i></i></a></li>
+        <li><a href="javascript:;">专长<i></i></a></li>
+        <li><a href="javascript:;">案例<i></i></a></li>
+        <li><a href="javascript:;">动态<i></i></a></li>
+        <li><a href="javascript:;">联系<i></i></a></li>
+    </ul>
+</div>
+<!--侧边栏-->
+<aside>
+    <a id="menu"></a>
+    <a href=""></a>
+</aside>
+<script>
+    var map = new BMap.Map("allmap");  // 创建Map实例
+    map.centerAndZoom("上海", 14);      // 初始化地图,用城市名设置地图中心点
+    // map.enableScrollWheelZoom(true);//    地图缩放
+    //    弹出框1内容
+    var content1 = '<div style="margin:0;line-height:20px;padding:2px;">' +
+            '<img src="../src/images/banner-logo.png" alt="" style="float:right;zoom:1;overflow:hidden;' +
+            'width:100px;height:100px;margin-left:3px;"/>' +
+            '地址：上海市杨浦区杨树浦路851号<br/>电话：0551-6561-2007<br/>邮箱：erbao@muyu007.com' + '</div>';
+    //    弹出框1
+    searchInfoWindow1 = new BMapLib.SearchInfoWindow(map, content1, {
+        title: "木鱼网络有限公司",      //标题
+        width: 290,             //宽度
+        height: 105,              //高度
+        panel: "panel",         //检索结果面板
+        enableAutoPan: true,     //自动平移
+        searchTypes: [
+            BMAPLIB_TAB_SEARCH,   //周边检索
+            BMAPLIB_TAB_TO_HERE,  //到这里去
+            BMAPLIB_TAB_FROM_HERE //从这里出发
+        ]
+    });
+    //    图标1
+    var position1 = new BMap.Point(121.48, 31.23);//定位
+    var myIcon1 = new BMap.Icon("../src/images/5.png", new BMap.Size(235, 219));
+    var lexuslogo1 = new BMap.Marker(position1, {icon: myIcon1}); //创建marker对象
+    map.addOverlay(lexuslogo1); //在地图中添加marker
+    lexuslogo1.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+    //    点击打开
+    lexuslogo1.addEventListener("click", function (e) {
+        searchInfoWindow1.open(lexuslogo1);
+    });
+    map.setMapStyle({style:'dark'});
+</script>
+
+</body>
+</html>

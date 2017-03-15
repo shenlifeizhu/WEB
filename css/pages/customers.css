@@ -1,0 +1,216 @@
+/*主体*/
+main {
+  background: url('../../src/images/clients-main.jpg') no-repeat center;
+  height: 1563px;
+}
+main section {
+  position: relative;
+  /*第一版:我们的客户*/
+  /*第二版:客户的声音*/
+  /*锚链接*/
+}
+main section.client {
+  background: url('../../src/images/expertise-bj4.png') no-repeat center center;
+  height: 642px;
+  padding-top: 106px;
+}
+main section.client img {
+  display: block;
+  margin: auto;
+}
+main section.client span {
+  display: block;
+  font-size: 24px;
+  color: #ababab;
+  text-align: center;
+  margin: 20px 0 74px;
+}
+main section.client > a {
+  background: url('../../src/images/top-ico4.png');
+}
+main section.client > a:hover {
+  background: url('../../src/images/top-ico4-hover.png');
+}
+main section.voice {
+  height: 724px;
+  padding-top: 66px;
+}
+main section.voice > img {
+  display: block;
+  margin: auto;
+}
+main section.voice div.line {
+  margin-top: 30px;
+  height: 3px;
+  background: url('../../src/images/border-bottom2.png') center no-repeat;
+}
+main section.voice div.show-box {
+  padding-top: 100px;
+}
+main section.voice div.show-box:hover div.content i.left {
+  opacity: 1;
+  transition: 0.5s;
+}
+main section.voice div.show-box:hover div.content i.right {
+  opacity: 1;
+  transition: 0.5s;
+}
+main section.voice div.show-box div.content {
+  position: relative;
+  width: 1122px;
+  height: 252px;
+  margin: auto;
+  border: 1px solid #404040;
+  border-radius: 20px;
+  background: #323232;
+}
+main section.voice div.show-box div.content ul li {
+  position: absolute;
+  color: #D8D8D8;
+  text-indent: 2em;
+  line-height: 2em;
+  width: 100%;
+  box-sizing: border-box;
+  opacity: 0;
+  padding: 30px 40px 40px 40px;
+  transition: .3s;
+}
+main section.voice div.show-box div.content ul li span {
+  display: block;
+  text-align: right;
+}
+main section.voice div.show-box div.content ul li:nth-child(4) p {
+  font-size: 24px;
+}
+main section.voice div.show-box div.content ul li:nth-child(7) p {
+  font-size: 24px;
+}
+main section.voice div.show-box div.content ul li:nth-child(9) p {
+  font-size: 24px;
+}
+main section.voice div.show-box div.content ul li:nth-child(10) p {
+  font-size: 24px;
+}
+main section.voice div.show-box div.content ul li:nth-child(11) p {
+  font-size: 24px;
+}
+main section.voice div.show-box div.content ul li:nth-child(12) p {
+  font-size: 24px;
+}
+main section.voice div.show-box div.content ul li.active {
+  opacity: 1;
+  transition: .3s;
+}
+main section.voice div.show-box div.content > i {
+  position: absolute;
+  z-index: 1;
+  width: 60px;
+  height: 120px;
+}
+main section.voice div.show-box div.content > i.left {
+  cursor: pointer;
+  opacity: 0;
+  background: url('../../src/images/img-btn.png');
+  left: -150px;
+  top: 100px;
+  transition: .3s;
+}
+main section.voice div.show-box div.content > i.left:hover {
+  background: url('../../src/images/img-btn-hover.png');
+  transition: .3s;
+}
+main section.voice div.show-box div.content > i.right {
+  cursor: pointer;
+  opacity: 0;
+  background: url('../../src/images/img-btn2.png');
+  right: -150px;
+  top: 100px;
+  transition: .3s;
+}
+main section.voice div.show-box div.content > i.right:hover {
+  background: url('../../src/images/img-btn-hover2.png');
+  transition: .3s;
+}
+main section.voice div.show-box div.logos {
+  position: relative;
+  top: -1px;
+  z-index: 1;
+  overflow: hidden;
+  width: 1122px;
+  height: 105px;
+  margin: auto;
+  padding-top: 60px;
+}
+main section.voice div.show-box div.logos ul {
+  position: relative;
+  width: 1224px;
+  left: 0;
+}
+main section.voice div.show-box div.logos ul li {
+  position: relative;
+  cursor: pointer;
+  float: left;
+  width: 91px;
+  height: 85px;
+  line-height: 85px;
+  margin-right: 11px;
+  background: url('../../src/images/c_bg1.png') no-repeat center center;
+  text-align: center;
+}
+main section.voice div.show-box div.logos ul li img {
+  vertical-align: middle;
+}
+main section.voice div.show-box div.logos ul li:before {
+  content: '.';
+  visibility: hidden;
+}
+main section.voice div.show-box div.logos ul li i {
+  display: none;
+  position: absolute;
+  width: 40px;
+  height: 19px;
+  bottom: 127px;
+  left: 23px;
+  background: url('../../src/images/sanjiao.png');
+}
+main section.voice div.show-box div.logos ul li.active {
+  background: url('../../src/images/c_bg2.png') no-repeat center center;
+}
+main section.voice div.show-box div.logos ul li.active i {
+  display: block;
+}
+main section > a {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  left: 50%;
+  margin-left: -21px;
+  bottom: 30px;
+  cursor: pointer;
+  background: url('../../src/images/top-ico3.png');
+  transition: .3s;
+}
+main section > a:hover {
+  background: url('../../src/images/top-ico3-hover.png');
+  transition: 0.3s;
+}
+/*页脚*/
+body > footer {
+  background: rgba(255, 255, 255, 0);
+}
+body > footer div.footer-bottom {
+  margin-top: -140px;
+  background: url('../../src/images/work-foot-bj2.png') no-repeat center center;
+}
+body > footer div.footer-bottom ul {
+  color: #000;
+}
+body > footer div.footer-bottom ul li:nth-child(2) i:nth-child(1) {
+  background: url('../../src/images/QQ-ICO.png') no-repeat;
+}
+body > footer div.footer-bottom ul li:nth-child(2) i:nth-child(2) {
+  background: url('../../src/images/WX-ICO.png') no-repeat;
+}
+body > footer div.footer-bottom ul li:nth-child(2) i:nth-child(3) {
+  background: url('../../src/images/WB-ICO.png') no-repeat;
+}
